@@ -1,0 +1,115 @@
+@media (max-width: 767px) {
+    .header-center {
+        height: 130px;
+        margin-top: 28px;
+        margin-bottom: 15px;
+    }
+
+    .home-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider__left {
+        padding-top: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .hide-l {
+        display: none;
+    }
+
+    .responsive-header-top-btn {
+        display: block;
+    }
+    .header-top__right {
+        position: relative;
+    }
+    .header-top__list {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--white-color);
+        border: thin solid #eee;
+        z-index: 1;
+        min-width: 150px;
+        animation: slideUp ease-out 0.2s, fadeIn ease-out 0.2s;
+    }
+    .header-top__item:not(:last-child) {
+        border-bottom: thin solid #eee;
+    }
+    .header-top__link {
+        padding: 6px 8px;
+        display: block;
+    }
+    .header-top__right:hover .header-top__list {
+        display: block;
+    }
+
+    .header-center-item {
+        justify-content: center;
+    }
+
+    .open-menu-btn {
+        display: inline-block;
+    }
+    .responsive-tab-list {
+        background-color: var(--white-color);
+        border: thin solid #ccc;
+        border-radius: 5px;
+        min-width: 170px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 3;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+    .responsive-tab-list__item:hover {
+        background-color: #eee;
+    }
+    .responsive-tab-list__item--is-target {
+        background-color: #347ab6 !important;
+    }
+    .responsive-tab-list__item--is-target .responsive-tab-list__link {
+        color: var(--white-color);
+    }
+    .responsive-tab-list__link {
+        font-size: 1.4em;
+        color: var(--text-color-1);
+        padding: 5px 15px;
+        display: block;
+    }
+    #section-recently-input:checked ~ .responsive-tab-list,
+    #section-suggest-input:checked ~ .responsive-tab-list {
+        display: block;
+    }
+
+    .footer-top__title {
+        margin-bottom: 12px;
+        margin-top: 30px;
+    }
+
+    .footer-bottom__copyright {
+        text-align: center;
+        margin-top: 16px;
+    }
+    .footer-bottom__payment-img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .header-bottom .open-menu-btn {
+        display: block;
+    }
+    .hide-on-tablet-mobile {
+        display: none;
+    }
+    .rate {
+        margin-bottom: 8px;
+    }
+    .items-horizontal__price-current {
+        font-size: 1.4rem;
+    }
+}
